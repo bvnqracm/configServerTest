@@ -1,0 +1,20 @@
+{
+    "name": "ms-flux-bike-rental",
+    "profiles": [
+        "dev"
+    ],
+    "label": "cloud-config",
+    "version": "15b2bd3b4f8f3b4a3757c0a35982b92cce3ca775",
+    "state": null,
+    "propertySources": [
+        {
+            "name": "https://github.com/ecastroyllescas/spring.webmvc.webflux-spring.cloud.netflix-spring.data/ms-flux-bike-rental-dev.yml",
+            "source": {
+                "env": "des",
+                "application.db.name": "dbTest",
+                "application.db.scripts.schema": "classpath:/scripts/schema.sql",
+                "application.db.scripts.data": "classpath:/scripts/data.sql"
+            }
+        }
+    ]
+}
